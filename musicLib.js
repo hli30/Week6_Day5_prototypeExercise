@@ -1,3 +1,4 @@
+//Library
 const Library = function (name, creator) {
   this.name = name;
   this.creator = creator;
@@ -8,6 +9,7 @@ Library.prototype.addPlaylist = function (playlist) {
   return this.playlists.push(playlist);
 }
 
+//Playlist
 const Playlist = function (name) {
   this.name = name;
   this.tracks = [];
@@ -40,6 +42,7 @@ Playlist.prototype.totalDuration = function () {
   return totalDuration;
 }
 
+//Track
 const Track = function (title, rating, length) {
   this.title = title;
   this.rating = rating;
